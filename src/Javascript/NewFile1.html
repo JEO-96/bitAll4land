@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getElementByid ¸Þ¼­µå·Î °´Ã¼ Ã£±â</title>
+<script language="javascript">
+	function sayHello(){
+		var textBox = document.getElementById("myName");
+		if (textBox != null) {
+			alert(textBox.value + "´Ô ¾È³çÇÏ¼¼¿ä!");
+		}
+		alert(textBox.value + "´Ô ¾È³çÇÏ¼¼¿ä!")
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="myName">
+	<input type="button" value="ÀÎ»çÇÏ±â" onclick="sayHello()">
+</body>
+</html>

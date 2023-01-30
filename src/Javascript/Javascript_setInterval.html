@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>window.setTimeout 메서드</title>
+		<script language="javascript">
+			var count = 0;
+
+			var interval = setInterval(sayHello, 1000);
+
+
+			function sayHello() {
+				alert("안녕하세요? 자바스크립트입니다.");
+				count += 1;
+				if (count == 5){
+					clearInterval(interval);
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Math 객체를 이용한 계산기</title>
+	<script src="./calculator.js"></script>
+</head>
+
+<body>
+	<input type="text" id="txtbox" value="0" readonly style="width: 200px; text-align: right; "><br>
+	<input type="button" value="clear" onclick="txtClear()" style="width: 100px; color: blue;">
+	<input type="button" value='=' onclick="cal(this.value)" style="width: 100px; color: blue;"><br>
+	<td><input type="button" value="1" onclick="inputNum(this.value)" style="width: 30px; color: blue;">
+	<td><input type="button" value="2" onclick="inputNum(this.value)" style="width: 30px; color: blue;">
+	<td><input type="button" value="3" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value='+' onclick="inputMathSymbol(this.value)"
+			style="width: 30px; margin-left: 15px; color: greenyellow;">
+	</td>
+	<td><input type="button" value='^' onclick="inputMathSymbol(this.value)"
+			style="width: 30px; margin-left: 15px; color: red;"><br></td>
+	<td><input type="button" value="4" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value="5" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value="6" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value='-' onclick="inputMathSymbol(this.value)"
+			style="width: 30px; margin-left: 15px; color: greenyellow;">
+	</td>
+	<td><input type="button" value="sin" id="sin" onclick="clickSin()"
+			style="width: 30px; margin-left: 15px; color: red;"><br></td>
+	<td><input type="button" value="7" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value="8" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value="9" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value='*' onclick="inputMathSymbol(this.value)"
+			style="width: 30px; margin-left: 15px; color: greenyellow;">
+	</td>
+	<td><input type="button" value='cos' onclick="clickCos(event)"
+			style="width: 30px; margin-left: 15px; color: red;"><br></td>
+	<td><input type="button" value="0" onclick="inputNum(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value="+/-" onclick="clickConversion()" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value="." onclick="clickDot(this.value)" style="width: 30px; color: blue;"></td>
+	<td><input type="button" value='/' onclick="inputMathSymbol(this.value)"
+			style="width: 30px; margin-left: 15px; color: greenyellow;">
+	</td>
+	<td><input type="button" value="tan" onclick="clickTan(event)"
+			style="width: 30px; margin-left: 15px; color: red;"><br></td>
+</body>
+
+</html>

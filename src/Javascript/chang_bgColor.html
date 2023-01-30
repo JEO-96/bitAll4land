@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배경색 바꾸기</title>
+<script language="javascript">
+	function changeBG_Color(event){
+		document.body.style.backgroundColor = event.target.value;
+	}
+	
+
+</script>
+</head>
+<body id="b">
+	<input type="radio" value="yellow" name="bgc" onclick="changeBG_Color(event)">노란색<br>
+	<input type="radio" value="green" name="bgc" onclick="changeBG_Color(event)">녹색<br>
+	<input type="radio" value="blue" name="bgc" onclick="changeBG_Color(event)">파란색<br>
+	<input type="radio" value="red" name="bgc" onclick="changeBG_Color(event)">빨간색<br>
+</body>
+</html>
