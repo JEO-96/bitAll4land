@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바 스크립트 배열</title>
+		<script language="javascript">
+			function phoneNumCheck(){
+				const regex = new RegExp(/\d{3}-\d{3,4}-\d{4}/);
+				var t = document.getElementById("phone");
+				window.alert("휴대폰번호 유효성 검사 결과:" + regex.test(t.value));
+			}
+
+			function emailCheck(){
+				const regex = new RegExp(/\w+@\w+\.\w+(\.\w+)?/);
+				var t = document.getElementById("email");
+				window.alert("이메일 유효성 검사 결과:" + regex.test(t.value));
+			}
+
+			function koreanNameCheck(){
+				const regex = new RegExp(/[가-힣]{2,5}/);
+				var t = document.getElementById("korean");
+				window.alert("한국인 이름 유효성 검사 결과:" + regex.test(t.value));
+			}
+
+		</script>
+	</head>
+	<body>
+		<label>휴대폰번호 유효성 검사</label>
+		<input type="text" id="phone" width="20">
+		<input type="button" value="검사" onclick="phoneNumCheck()">
+		<br>
+		<label>이메일 유효성 검사</label>
+		<input type="text" id="email" width="20">
+		<input type="button" value="검사" onclick="emailCheck()">
+		<br>
+		<label>한국인 이름 유효성 검사</label>
+		<input type="text" id="korean" width="20">
+		<input type="button" value="검사" onclick="koreanNameCheck()">
+	</body>
+</html>

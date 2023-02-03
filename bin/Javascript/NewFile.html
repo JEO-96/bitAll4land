@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="./NewFile.js"></script>
 </head>
 <body>
-	<input type="text" size="20">
-	<input type="submit" value="�̸� ����">
+	<input type="text" size="20" id="tbString">
+	<input type="submit" value="미리 보기" onclick="dispMsg()">
 	<br>
-	<label>����:</label>
-	<select name="color" size="1">
-		<option value="����">����</option>
-		<option value="�ʷ�">�ʷ�</option>
-		<option value="�Ķ�">�Ķ�</option>
+	<label>색상:</label>
+	<select id="textColor">
+		<option value="red">빨강</option>
+		<option value="green">초록</option>
+		<option value="blue">파랑</option>
 	</select>
 	<br>
-	<label>ũ��:</label>
-	<select name="size" size="1">
-		<option value=1>1</option>
-		<option value=2>2</option>
-		<option value=3>3</option>
-		<option value=4>4</option>
-		<option value=5>5</option>
-		<option value=6>6</option>
+	<label>크기:</label>
+	<select id="size" size="1">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
 	</select>
 	<br>
-	<input type="checkbox" value="��Ҽ�">��Ҽ�
-	<input type="checkbox" value="ũ��">ũ��
-	<input type="checkbox" value="�۰�">�۰�
-	<input type="checkbox" value="�β���">�β���
-	<input type="checkbox" value="�����">�����
+	<input type="checkbox" value="취소선" name="font">취소선
+	<input type="checkbox" value="크게" name="font">크게
+	<input type="checkbox" value="작게" name="font">작게
+	<input type="checkbox" value="두껍게" name="font">두껍게
+	<input type="checkbox" value="기울임" name="font">기울임
 	<br>
-	<input type="checkbox" value="��÷��">��÷��
-	<input type="checkbox" value="�Ʒ�÷��">�Ʒ�÷��
-	<input type="checkbox" value="�ҹ��ڷ�">�ҹ��ڷ�
-	<input type="checkbox" value="�빮�ڷ�">�빮�ڷ�
+	<input type="checkbox" value="위첨자" name="font">위첨자
+	<input type="checkbox" value="아래첨자" name="font">아래첨자
+	<input type="checkbox" value="소문자로" name="font">소문자로
+	<input type="checkbox" value="대문자로" name="font">대문자로
+	<br>
+	<span id="result"></span>
 </body>
 </html>

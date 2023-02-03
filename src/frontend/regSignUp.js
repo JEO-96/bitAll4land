@@ -1,9 +1,10 @@
 var regId = /^[a-zA-Z][0-9a-zA-Z]{3,11}/
 var regPw = /^[a-zA-Z0-9]{4,12}/
-var regEmail = /^[a-zA-Z][0-9a-zA-Z]*@\w\.\w/
+var regEmail = /^[a-zA-Z][0-9a-zA-Z]+@\w+\.\w+/
 var regResNum = /\d{13}/
 var regAboutMe = /.{10,}/
 var regName = /[가-힣]{2,5}/
+
 
 function checkId(){
     let objId = document.getElementById("id");
@@ -112,7 +113,7 @@ function checkHobby(){
 
 function checkAboutMe(){
     var objAboutme = document.getElementById("aboutMe");
-    if (objAboutme.length < 10){
+    if (regAboutMe.test(objAboutme.value)){
         alert("10글자 이상 입력하시오");
         return false;
     } else {
@@ -138,8 +139,4 @@ function allCheck(){
     } else{
         return true;
     }
-    
-    
-    
-    
 }

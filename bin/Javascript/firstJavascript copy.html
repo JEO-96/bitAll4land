@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>window.alert 메서드</title>
+	<script language="javascript">
+		let color = 'red';
+		function foo() {
+			let color = 'blue'; // 2
+			function bar() {
+				// console.log(color); // 1
+				document.write(color);
+			}
+			return bar;
+		}
+		var baz = foo(); // 3
+		baz(); // 4
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!--1. 정보를 보존할 수 있다. : 외부 함수 실행이 끝나더라도 외부함수의 데이터를 사용할 수 있다 (캡슐화)
+2. 모듈화에 유리하다. */-->

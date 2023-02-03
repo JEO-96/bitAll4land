@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-	<title>getElementsByTagName ¸Ş¼­µå·Î °´Ã¼ Ã£±â</title>
+<meta charset="UTF-8">
+	<title>getElementsByTagName ë©”ì„œë“œë¡œ ê°ì²´ ì°¾ê¸°</title>
 	<script language="javascript">
 	function findSubject() {
 		var arrRadio = document.getElementsByTagName("input");
 		
 		for (var i=0; i<arrRadio.length;i++){
 			if (arrRadio[i].type == "radio" && arrRadio[i].checked) {
-			alert(arrRadio[i].value + " °ú¸ñÀ» ÁÁ¾ÆÇÏ½Ã´Â ±º¿ä!");
+			alert(arrRadio[i].value + " ê³¼ëª©ì„ ì¢‹ì•„í•˜ì‹œëŠ” êµ°ìš”!");
 			break;
 		}
 	}
@@ -17,10 +17,10 @@
 	</script>
 </head>
 <body>
-	<h1>Á¦ÀÏ ÁÁ¾ÆÇÏ´Â °ú¸ñÀº?</h1>
+	<h1>ì œì¼ ì¢‹ì•„í•˜ëŠ” ê³¼ëª©ì€?</h1>
 	<input type="radio" value="HTML" name="subject">HTML<br>
 	<input type="radio" value="CSS" name="subject">CSS<br>
-	<input type="radio" value="ÀÚ¹Ù½ºÅ©¸³Æ®" name="subject">ÀÚ¹Ù½ºÅ©¸³Æ®<br>
-	<input type="button" value="´ä¾ÈÁö Á¦Ãâ" onclick="findSubject()">
+	<input type="radio" value="ìë°”ìŠ¤í¬ë¦½íŠ¸" name="subject">ìë°”ìŠ¤í¬ë¦½íŠ¸<br>
+	<input type="button" value="ë‹µì•ˆì§€ ì œì¶œ" onclick="findSubject()">
 </body>
 </html>

@@ -12,7 +12,11 @@ function checkId(){
         alert("아이디가 영어나 숫자로 이루어 지지 않았습니다.");
         objId.focus;
         return false;
-    } else {
+    } else if (!checkEng) {
+        alert("아이디에 영어가 포함되어 있지않습니다.");
+        return false;
+    }
+    else {
         return true;
     }
 }
@@ -99,6 +103,15 @@ function checkKorEng(value){
     } else{
         return false;
     }
+}
+
+function checkEng(value){
+    for(i=0;i<value.length;i++){
+        if ((value.charCodeAt(i)>=65 && value.charCodeAt(i)<=90) || (value.charCodeAt(i)>=97 && value.charCodeAt(i)<=122)) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function checkResNum(){
